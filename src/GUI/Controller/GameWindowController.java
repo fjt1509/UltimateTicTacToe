@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.GridPane;
 
 /**
  * FXML Controller class
@@ -19,169 +20,170 @@ import javafx.fxml.Initializable;
  */
 public class GameWindowController implements Initializable
 {
-
     @FXML
-    private JFXButton $1_1;
+    private GridPane rootPane;
     @FXML
-    private JFXButton $2_1;
+    private JFXButton A1_1;
     @FXML
-    private JFXButton $3_1;
+    private JFXButton A2_1;
     @FXML
-    private JFXButton $1_2;
+    private JFXButton A3_1;
     @FXML
-    private JFXButton $2_2;
+    private JFXButton A1_2;
     @FXML
-    private JFXButton $3_2;
+    private JFXButton A2_2;
     @FXML
-    private JFXButton $1_3;
+    private JFXButton A3_2;
     @FXML
-    private JFXButton $2_3;
+    private JFXButton A1_3;
     @FXML
-    private JFXButton $3_3;
+    private JFXButton A2_3;
     @FXML
-    private JFXButton $4_1;
+    private JFXButton A3_3;
     @FXML
-    private JFXButton $5_1;
+    private JFXButton A4_1;
     @FXML
-    private JFXButton $6_1;
+    private JFXButton A5_1;
     @FXML
-    private JFXButton $4_2;
+    private JFXButton A6_1;
     @FXML
-    private JFXButton $5_2;
+    private JFXButton A4_2;
     @FXML
-    private JFXButton $6_2;
+    private JFXButton A5_2;
     @FXML
-    private JFXButton $4_3;
+    private JFXButton A6_2;
     @FXML
-    private JFXButton $5_3;
+    private JFXButton A4_3;
     @FXML
-    private JFXButton $6_3;
+    private JFXButton A5_3;
     @FXML
-    private JFXButton $7_1;
+    private JFXButton A6_3;
     @FXML
-    private JFXButton $8_1;
+    private JFXButton A7_1;
     @FXML
-    private JFXButton $9_1;
+    private JFXButton A8_1;
     @FXML
-    private JFXButton $7_2;
+    private JFXButton A9_1;
     @FXML
-    private JFXButton $8_2;
+    private JFXButton A7_2;
     @FXML
-    private JFXButton $9_2;
+    private JFXButton A8_2;
     @FXML
-    private JFXButton $7_3;
+    private JFXButton A9_2;
     @FXML
-    private JFXButton $8_3;
+    private JFXButton A7_3;
     @FXML
-    private JFXButton $9_3;
+    private JFXButton A8_3;
     @FXML
-    private JFXButton $1_4;
+    private JFXButton A9_3;
     @FXML
-    private JFXButton $2_4;
+    private JFXButton A1_4;
     @FXML
-    private JFXButton $3_4;
+    private JFXButton A2_4;
     @FXML
-    private JFXButton $1_5;
+    private JFXButton A3_4;
     @FXML
-    private JFXButton $2_5;
+    private JFXButton A1_5;
     @FXML
-    private JFXButton $3_5;
+    private JFXButton A2_5;
     @FXML
-    private JFXButton $1_6;
+    private JFXButton A3_5;
     @FXML
-    private JFXButton $2_6;
+    private JFXButton A1_6;
     @FXML
-    private JFXButton $3_6;
+    private JFXButton A2_6;
     @FXML
-    private JFXButton $4_4;
+    private JFXButton A3_6;
     @FXML
-    private JFXButton $5_4;
+    private JFXButton A4_4;
     @FXML
-    private JFXButton $6_4;
+    private JFXButton A5_4;
     @FXML
-    private JFXButton $4_5;
+    private JFXButton A6_4;
     @FXML
-    private JFXButton $5_5;
+    private JFXButton A4_5;
     @FXML
-    private JFXButton $6_5;
+    private JFXButton A5_5;
     @FXML
-    private JFXButton $4_6;
+    private JFXButton A6_5;
     @FXML
-    private JFXButton $5_6;
+    private JFXButton A4_6;
     @FXML
-    private JFXButton $6_6;
+    private JFXButton A5_6;
     @FXML
-    private JFXButton $7_4;
+    private JFXButton A6_6;
     @FXML
-    private JFXButton $8_4;
+    private JFXButton A7_4;
     @FXML
-    private JFXButton $9_4;
+    private JFXButton A8_4;
     @FXML
-    private JFXButton $7_5;
+    private JFXButton A9_4;
     @FXML
-    private JFXButton $8_5;
+    private JFXButton A7_5;
     @FXML
-    private JFXButton $9_5;
+    private JFXButton $A8_5;
     @FXML
-    private JFXButton $7_6;
+    private JFXButton A9_5;
     @FXML
-    private JFXButton $8_6;
+    private JFXButton A7_6;
     @FXML
-    private JFXButton $9_6;
+    private JFXButton A8_6;
     @FXML
-    private JFXButton $1_7;
+    private JFXButton A9_6;
     @FXML
-    private JFXButton $2_7;
+    private JFXButton A1_7;
     @FXML
-    private JFXButton $3_7;
+    private JFXButton A2_7;
     @FXML
-    private JFXButton $1_8;
+    private JFXButton A3_7;
     @FXML
-    private JFXButton $2_8;
+    private JFXButton A1_8;
     @FXML
-    private JFXButton $3_8;
+    private JFXButton A2_8;
     @FXML
-    private JFXButton $1_9;
+    private JFXButton A3_8;
     @FXML
-    private JFXButton $2_9;
+    private JFXButton A1_9;
     @FXML
-    private JFXButton $3_9;
+    private JFXButton A2_9;
     @FXML
-    private JFXButton $4_7;
+    private JFXButton A3_9;
     @FXML
-    private JFXButton $5_7;
+    private JFXButton A4_7;
     @FXML
-    private JFXButton $6_7;
+    private JFXButton A5_7;
     @FXML
-    private JFXButton $4_8;
+    private JFXButton A6_7;
     @FXML
-    private JFXButton $5_8;
+    private JFXButton A4_8;
     @FXML
-    private JFXButton $6_8;
+    private JFXButton A5_8;
     @FXML
-    private JFXButton $4_9;
+    private JFXButton A6_8;
     @FXML
-    private JFXButton $5_9;
+    private JFXButton A4_9;
     @FXML
-    private JFXButton $6_9;
+    private JFXButton A5_9;
     @FXML
-    private JFXButton $7_7;
+    private JFXButton A6_9;
     @FXML
-    private JFXButton $8_7;
+    private JFXButton A7_7;
     @FXML
-    private JFXButton $9_7;
+    private JFXButton A8_7;
     @FXML
-    private JFXButton $7_8;
+    private JFXButton A9_7;
     @FXML
-    private JFXButton $8_8;
+    private JFXButton A7_8;
     @FXML
-    private JFXButton $9_8;
+    private JFXButton A8_8;
     @FXML
-    private JFXButton $7_9;
+    private JFXButton A9_8;
     @FXML
-    private JFXButton $8_9;
+    private JFXButton A7_9;
     @FXML
-    private JFXButton $9_9;
+    private JFXButton A8_9;
+    @FXML
+    private JFXButton A9_9;
 
     /**
      * Initializes the controller class.

@@ -8,10 +8,11 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\jfoenix-8.0.1.jar" size="2405715" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Ultimate TicTacToe" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="ultimate.tictactoe.UltimateTicTacToe"  name="Ultimate TicTacToe" />
+  <jfx:javafx-desc  width="800" height="600" main-class="tictactoe.UltimateTicTacToe"  name="Ultimate TicTacToe" />
   <update check="always"/>
 </jnlp>
