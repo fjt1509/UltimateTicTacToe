@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
 /**
@@ -197,6 +198,20 @@ public class GameWindowController implements Initializable
     @FXML
     private void registerMoveEvent(ActionEvent event)
     {
+        Button selectedBtn = (Button) event.getSource();
+        String location = selectedBtn.getId().toString();
+        
+        location = location.replaceAll("A", "");
+        String[] xy = location.split("_");
+        
+        int x = Integer.parseInt(xy[0]);
+        int y = Integer.parseInt(xy[1]);
+        
+        int macroX = x/3;
+        int macroY = y/3;
+        
+        System.out.println("X = " + x + " Y = " + y);
+        System.out.println("Macro Location " + macroX + "x " + macroY);
     }
     
 }
