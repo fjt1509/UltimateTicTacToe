@@ -13,6 +13,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
+import BLL.move.IMove;
+import BLL.move.MyMove;
+import GUI.Model.GameModel;
 
 /**
  * FXML Controller class
@@ -186,6 +189,10 @@ public class GameWindowController implements Initializable
     @FXML
     private JFXButton A0_8;
 
+    
+    
+    private GameModel model = new GameModel();
+    
     /**
      * Initializes the controller class.
      */
@@ -210,8 +217,16 @@ public class GameWindowController implements Initializable
         int macroX = x/3;
         int macroY = y/3;
         
+        IMove move = new MyMove(x, y);
+        model.makeMove(move);
+        
         System.out.println("X = " + x + " Y = " + y);
         System.out.println("Macro Location " + macroX + "x " + macroY);
+        
+
+        
     }
+
+
     
 }

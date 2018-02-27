@@ -12,7 +12,7 @@
             <Font name="System Bold" size="37.0" />
          </font>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="126.0" onAction="#PVPEvent" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: red;" text="Player vs. Player">
+      <JFXButton fx:id="pvpBtn" buttonType="RAISED" layoutX="208.0" layoutY="126.0" onAction="#PVPEvent" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: red;" text="Player vs. Player">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

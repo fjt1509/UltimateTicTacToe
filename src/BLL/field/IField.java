@@ -1,7 +1,7 @@
-package field;
+package BLL.field;
 
 import java.util.List;
-import move.IMove;
+import BLL.move.IMove;
 
 /**
  *

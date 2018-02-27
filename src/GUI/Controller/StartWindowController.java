@@ -5,6 +5,7 @@
  */
 package GUI.Controller;
 
+import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -29,6 +30,8 @@ public class StartWindowController implements Initializable
 
     @FXML
     private AnchorPane rootPane;
+    @FXML
+    private JFXButton pvpBtn;
 
     /**
      * Initializes the controller class.
@@ -58,6 +61,9 @@ public class StartWindowController implements Initializable
             Stage stage = new Stage();
             stage.setScene(new Scene(root)); 
             stage.show();
+            
+            Stage oldStage = (Stage) pvpBtn.getScene().getWindow();
+            oldStage.close();
             
         } catch (IOException ex) 
         {

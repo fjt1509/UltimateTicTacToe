@@ -23,7 +23,8 @@ import javafx.stage.Stage;
 public class UltimateTicTacToe extends Application {
     
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException 
+    {
         
         
         Parent root = FXMLLoader.load(getClass().getResource("/GUI/View/StartWindow.fxml"));
@@ -37,7 +38,8 @@ public class UltimateTicTacToe extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         launch(args);
     }
     
