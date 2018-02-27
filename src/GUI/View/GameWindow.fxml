@@ -30,15 +30,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A1_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " />
-            <JFXButton fx:id="A2_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A3_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A1_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A2_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A3_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A1_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A2_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A3_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A0_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " />
+            <JFXButton fx:id="A1_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A2_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A0_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A1_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A2_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A0_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A1_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A2_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text="  " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="2">
@@ -53,15 +53,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A4_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A5_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A6_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A4_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A5_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A6_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A4_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A5_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A6_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A3_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A4_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A5_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A3_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A4_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A5_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A3_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A4_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A5_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="3">
@@ -76,15 +76,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A7_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A8_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A9_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A7_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A8_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A9_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A7_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A8_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A9_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A6_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A7_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A8_0" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A6_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A7_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A8_1" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A6_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A7_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A8_2" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -99,15 +99,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A1_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A2_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A3_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A1_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A2_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A3_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A1_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A2_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A3_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A0_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A1_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A2_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A0_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A1_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A2_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A0_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A1_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A2_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -122,15 +122,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A4_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A5_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A6_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A4_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A5_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A6_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A4_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A5_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A6_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A3_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A4_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A5_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A3_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A4_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A5_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A3_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A4_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A5_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
@@ -145,15 +145,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A7_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A8_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A9_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A7_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="$A8_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A9_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A7_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A8_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A9_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A6_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A7_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A8_3" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A6_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A7_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A8_4" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A6_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A7_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A8_5" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -168,15 +168,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A1_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A2_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A3_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A1_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A2_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A3_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A1_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A2_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A3_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A0_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A1_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A2_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A0_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A1_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A2_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A0_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A1_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A2_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -191,15 +191,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A4_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A5_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A6_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A4_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A5_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A6_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A4_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A5_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A6_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A3_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A4_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A5_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A3_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A4_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A5_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A3_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A4_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A5_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane gridLinesVisible="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
@@ -214,15 +214,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton fx:id="A7_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
-            <JFXButton fx:id="A8_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
-            <JFXButton fx:id="A9_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
-            <JFXButton fx:id="A7_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
-            <JFXButton fx:id="A8_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A9_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <JFXButton fx:id="A7_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
-            <JFXButton fx:id="A8_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <JFXButton fx:id="A9_9" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A6_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " />
+            <JFXButton fx:id="A7_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" />
+            <JFXButton fx:id="A8_6" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" />
+            <JFXButton fx:id="A6_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="1" />
+            <JFXButton fx:id="A7_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A8_7" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="A6_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.rowIndex="2" />
+            <JFXButton fx:id="A7_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="A8_8" onAction="#registerMoveEvent" prefHeight="55.0" prefWidth="224.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>

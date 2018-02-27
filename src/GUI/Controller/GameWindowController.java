@@ -64,19 +64,13 @@ public class GameWindowController implements Initializable
     @FXML
     private JFXButton A8_1;
     @FXML
-    private JFXButton A9_1;
-    @FXML
     private JFXButton A7_2;
     @FXML
     private JFXButton A8_2;
     @FXML
-    private JFXButton A9_2;
-    @FXML
     private JFXButton A7_3;
     @FXML
     private JFXButton A8_3;
-    @FXML
-    private JFXButton A9_3;
     @FXML
     private JFXButton A1_4;
     @FXML
@@ -118,19 +112,11 @@ public class GameWindowController implements Initializable
     @FXML
     private JFXButton A8_4;
     @FXML
-    private JFXButton A9_4;
-    @FXML
     private JFXButton A7_5;
-    @FXML
-    private JFXButton $A8_5;
-    @FXML
-    private JFXButton A9_5;
     @FXML
     private JFXButton A7_6;
     @FXML
     private JFXButton A8_6;
-    @FXML
-    private JFXButton A9_6;
     @FXML
     private JFXButton A1_7;
     @FXML
@@ -144,12 +130,6 @@ public class GameWindowController implements Initializable
     @FXML
     private JFXButton A3_8;
     @FXML
-    private JFXButton A1_9;
-    @FXML
-    private JFXButton A2_9;
-    @FXML
-    private JFXButton A3_9;
-    @FXML
     private JFXButton A4_7;
     @FXML
     private JFXButton A5_7;
@@ -162,29 +142,49 @@ public class GameWindowController implements Initializable
     @FXML
     private JFXButton A6_8;
     @FXML
-    private JFXButton A4_9;
-    @FXML
-    private JFXButton A5_9;
-    @FXML
-    private JFXButton A6_9;
-    @FXML
     private JFXButton A7_7;
     @FXML
     private JFXButton A8_7;
-    @FXML
-    private JFXButton A9_7;
     @FXML
     private JFXButton A7_8;
     @FXML
     private JFXButton A8_8;
     @FXML
-    private JFXButton A9_8;
+    private JFXButton A0_0;
     @FXML
-    private JFXButton A7_9;
+    private JFXButton A1_0;
     @FXML
-    private JFXButton A8_9;
+    private JFXButton A2_0;
     @FXML
-    private JFXButton A9_9;
+    private JFXButton A0_1;
+    @FXML
+    private JFXButton A0_2;
+    @FXML
+    private JFXButton A3_0;
+    @FXML
+    private JFXButton A4_0;
+    @FXML
+    private JFXButton A5_0;
+    @FXML
+    private JFXButton A6_0;
+    @FXML
+    private JFXButton A7_0;
+    @FXML
+    private JFXButton A8_0;
+    @FXML
+    private JFXButton A0_3;
+    @FXML
+    private JFXButton A0_4;
+    @FXML
+    private JFXButton A0_5;
+    @FXML
+    private JFXButton A8_5;
+    @FXML
+    private JFXButton A0_6;
+    @FXML
+    private JFXButton A0_7;
+    @FXML
+    private JFXButton A0_8;
 
     /**
      * Initializes the controller class.
