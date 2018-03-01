@@ -17,12 +17,12 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="193.0" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: blue;" text="Player vs. Bot">
+      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="193.0" onAction="#PVBEvent" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: blue;" text="Player vs. Bot">
          <font>
             <Font size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="262.0" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: green;" text="Bot vs. Bot">
+      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="262.0" onAction="#BVBEvent" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: green;" text="Bot vs. Bot">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
