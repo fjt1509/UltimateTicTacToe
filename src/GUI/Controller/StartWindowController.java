@@ -45,14 +45,24 @@ public class StartWindowController implements Initializable
     @FXML
     private void PVPEvent(ActionEvent event)
     {
-        
-        gameScene();
-
-        
-        
+        gameScene();   
     }
 
-    private void gameScene()
+
+    @FXML
+    private void PVBEvent(ActionEvent event)
+    {
+        gameScene(); 
+    }
+
+    @FXML
+    private void BVBEvent(ActionEvent event)
+    {
+        gameScene(); 
+    }
+    
+    
+        private void gameScene()
     {
     try 
         {
@@ -70,5 +80,4 @@ public class StartWindowController implements Initializable
             Logger.getLogger(StartWindowController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
 }
