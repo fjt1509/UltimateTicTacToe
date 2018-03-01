@@ -214,14 +214,9 @@ public class GameWindowController implements Initializable
         int x = Integer.parseInt(xy[0]);
         int y = Integer.parseInt(xy[1]);
         
-        int macroX = x/3;
-        int macroY = y/3;
-        
         IMove move = new MyMove(x, y);
         model.makeMove(move);
-        
-        System.out.println("X = " + x + " Y = " + y);
-        System.out.println("Macro Location " + macroX + "x " + macroY);
+
         
 
         

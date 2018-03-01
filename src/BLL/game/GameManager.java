@@ -1,6 +1,7 @@
 package BLL.game;
 
 import BLL.bot.IBot;
+import BLL.field.IField;
 import BLL.move.IMove;
 
 /**
@@ -14,6 +15,9 @@ import BLL.move.IMove;
  * @author mjl
  */
 public class GameManager {
+
+
+
     
     /**
      * Three different game modes.
@@ -84,11 +88,17 @@ public class GameManager {
         
         //Update the currentState
         UpdateBoard(move);
+        PrintDebugField(currentState.getField().getBoard());
+
         UpdateMacroboard(move);
+        PrintDebugMacroBoard(currentState.getField().getMacroboard());
         
+        if(checkWinner(move))
+        {
+            System.out.println(currentPlayer + " has won");               
+        }
         //Update currentPlayer
         currentPlayer = (currentPlayer + 1) % 2;
-        
         return true;
     }
     
@@ -132,13 +142,97 @@ public class GameManager {
     
     private void UpdateBoard(IMove move)
     {
-       //TODO: Update the board to the new state 
-        throw new UnsupportedOperationException("Not supported yet."); 
+ 
+            currentState.getField().getBoard()[move.getX()][move.getY()] = currentPlayer + "";
+        
+  
+        
+        
+       
+        System.out.println(move.getX() + " " + move.getY());
     }
     
     private void UpdateMacroboard(IMove move)
-    {
-       //TODO: Update the macroboard to the new state 
-       throw new UnsupportedOperationException("Not supported yet."); 
+    {     
+        for (int x = 0; x < 3; x++) 
+        {
+            for (int y = 0; y < 3; y++) 
+            {
+                if(x == move.getX()%3 && y == move.getY()%3)
+                {
+                    currentState.getField().getMacroboard()[x][y] = IField.AVAILABLE_FIELD;
+                    
+                }
+                else
+                {
+                    currentState.getField().getMacroboard()[x][y] = IField.EMPTY_FIELD;
+                    
+                }
+                
+            }
+            
+        }
+       
+       
     }
+    
+     private void PrintDebugField(String[][] microboard)
+    {
+        System.out.println();
+        for (int x = 0; x < 9; x++) 
+        {
+            for (int y = 0; y < 9; y++) 
+            {
+                
+                System.out.print(microboard[x][y] + " ");
+                
+            }
+            System.out.println();
+        }                
+    }
+     
+     
+    private void PrintDebugMacroBoard(String[][] macroboard) 
+    {        
+        System.out.println();
+        for (int x = 0; x < 3; x++) 
+        {
+            for (int y = 0; y < 3; y++) 
+            {
+                
+                System.out.print(macroboard[x][y] + " ");
+                
+            }
+            System.out.println();
+        }          
+    }
+    
+    private Boolean checkWinner(IMove move) 
+    {
+        int macroX = move.getX()/3;
+        int macroY = move.getY()/3;
+        
+        for (int x = 0; x < 9; x++) 
+        {
+            for (int y = 0; y < 9; y++) 
+            {
+                if(x/3 == macroX && y/3 == macroY)
+                {
+                    if(currentState.getField().getBoard()[x][y] != IField.EMPTY_FIELD)
+                    {
+                        System.out.println("Got em");
+                    }
+                }
+                
+            }
+            
+        }
+        return false;
+        
+        
+        
+    }    
+     
 }
+
+
