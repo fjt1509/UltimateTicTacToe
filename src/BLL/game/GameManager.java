@@ -15,10 +15,6 @@ import BLL.move.IMove;
  * @author mjl
  */
 public class GameManager {
-
-
-
-    
     /**
      * Three different game modes.
      */
@@ -93,10 +89,7 @@ public class GameManager {
         UpdateMacroboard(move);
         PrintDebugMacroBoard(currentState.getField().getMacroboard());
         
-        if(checkWinner(move))
-        {
-            System.out.println(currentPlayer + " has won");               
-        }
+        checkWinner(move);
         //Update currentPlayer
         currentPlayer = (currentPlayer + 1) % 2;
         return true;
@@ -142,13 +135,8 @@ public class GameManager {
     
     private void UpdateBoard(IMove move)
     {
- 
-            currentState.getField().getBoard()[move.getX()][move.getY()] = currentPlayer + "";
-        
-  
-        
-        
-       
+        currentState.getField().getBoard()[move.getX()][move.getY()] = currentPlayer + "";
+   
         System.out.println(move.getX() + " " + move.getY());
     }
     
@@ -207,31 +195,86 @@ public class GameManager {
         }          
     }
     
-    private Boolean checkWinner(IMove move) 
-    {
+    private void checkWinner(IMove move) 
+    {        
         int macroX = move.getX()/3;
         int macroY = move.getY()/3;
         
+        breakpoint:
         for (int x = 0; x < 9; x++) 
         {
             for (int y = 0; y < 9; y++) 
-            {
+            {        
                 if(x/3 == macroX && y/3 == macroY)
                 {
-                    if(currentState.getField().getBoard()[x][y] != IField.EMPTY_FIELD)
-                    {
-                        System.out.println("Got em");
-                    }
+                    //ideen er at den finder det øverste felt i venstre hjørne hvor der så bagefter tages udgangspunkt i at tjekke x++ y++ 3 gange for en vinder
+                    System.out.println(x + " " + y);  
+                    checkWinner(x, y);
+                    break breakpoint;
+                }            
+            }
+        }
+        
+    
+    
+    }    
+    
+        private void checkWinner(int x, int y) 
+        {
+            String player = currentPlayer+"";
+            
+            //Horizontal check
+            for (int i = 0; i < 3; i++) 
+            {
+                int localX = x;
+                int localY = y;
+                if(currentState.getField().getBoard()[localX][localY].equals(player) &&
+                   currentState.getField().getBoard()[localX+1][localY].equals(player) &&
+                   currentState.getField().getBoard()[localX+2][localY].equals(player))
+                {
+                    System.out.println(currentPlayer + " has won the board");
                 }
-                
+                localY++;
             }
             
+            //Vertical check
+            for (int i = 0; i < 3; i++) 
+            {
+                int localX = x;
+                int localY = y;                
+                if(currentState.getField().getBoard()[localX][localY].equals(player) &&
+                   currentState.getField().getBoard()[localX][localY+1].equals(player) &&
+                   currentState.getField().getBoard()[localX][localY+2].equals(player))
+                {
+                    System.out.println(currentPlayer + " has won the board");                
+                }
+                localX++;
+            } 
+            
+            //Diagonal check
+            int localX_1 = x;
+            int localY_1 = y;     
+            if(currentState.getField().getBoard()[localX_1][localY_1] == currentPlayer + "" &&
+               currentState.getField().getBoard()[localX_1+1][localY_1+1] == currentPlayer + "" &&
+               currentState.getField().getBoard()[localX_1+2][localY_1+2] == currentPlayer + "")
+            {
+                System.out.println(currentPlayer + " has won the board");                
+            }
+            int localX_2 = x;
+            int localY_2 = y;              
+            if(currentState.getField().getBoard()[localX_2+2][localY_2] == currentPlayer + "" &&
+               currentState.getField().getBoard()[localX_2+1][localY_2+1] == currentPlayer + "" &&
+               currentState.getField().getBoard()[localX_2][localY_2+2] == currentPlayer + "")
+            {
+                System.out.println(currentPlayer + " has won the board");                
+            }            
         }
-        return false;
         
         
-        
-    }    
+    public int retrieveCurrentPlayer() 
+    {
+        return currentPlayer;
+    }       
      
 }
 

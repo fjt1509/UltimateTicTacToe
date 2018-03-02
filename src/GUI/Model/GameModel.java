@@ -22,9 +22,15 @@ public class GameModel {
         gameManager = new GameManager(new MyGameState());
     }
 
-    public void makeMove(IMove move) 
+    public boolean makeMove(IMove move) 
     {
-        gameManager.UpdateGame(move);
+        return gameManager.UpdateGame(move);
     }
+
+    public int retrieveCurrentPlayer() 
+    {
+        return gameManager.retrieveCurrentPlayer();
+    }
+
     
 }

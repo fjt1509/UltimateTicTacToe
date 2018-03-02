@@ -215,11 +215,27 @@ public class GameWindowController implements Initializable
         int y = Integer.parseInt(xy[1]);
         
         IMove move = new MyMove(x, y);
-        model.makeMove(move);
-
+        if(model.makeMove(move))
+        {
+           markField(selectedBtn); 
+        }
+        
+        
         
 
         
+    }
+
+    private void markField(Button selectedBtn) 
+    {
+        if(model.retrieveCurrentPlayer() == 0)
+        {
+            selectedBtn.setText("O");
+        }
+        if(model.retrieveCurrentPlayer() == 1)
+        {
+            selectedBtn.setText("X");
+        }        
     }
 
 
