@@ -16,6 +16,7 @@ import javafx.scene.layout.GridPane;
 import BLL.move.IMove;
 import BLL.move.MyMove;
 import GUI.Model.GameModel;
+import java.util.ArrayList;
 
 /**
  * FXML Controller class
@@ -190,16 +191,42 @@ public class GameWindowController implements Initializable
     private JFXButton A0_8;
 
     
+    @FXML
+    private GridPane B0_0;
+    @FXML
+    private GridPane B1_0;
+    @FXML
+    private GridPane B2_0;
+    @FXML
+    private GridPane B0_1;
+    @FXML
+    private GridPane B1_1;
+    @FXML
+    private GridPane B2_1;
+    @FXML
+    private GridPane B0_2;
+    @FXML
+    private GridPane B1_2;
+    @FXML
+    private GridPane B2_2;
     
     private GameModel model = new GameModel();
-    
+    private ArrayList<GridPane> gridList = new ArrayList<>();
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        // TODO
+        gridList.add(B0_0);
+        gridList.add(B1_0);
+        gridList.add(B2_0);
+        gridList.add(B0_1);
+        gridList.add(B1_1);
+        gridList.add(B2_1);
+        gridList.add(B0_2);
+        gridList.add(B1_2);
+        gridList.add(B2_2);
     }    
 
     @FXML
@@ -215,9 +242,15 @@ public class GameWindowController implements Initializable
         int y = Integer.parseInt(xy[1]);
         
         IMove move = new MyMove(x, y);
+        
         if(model.makeMove(move))
         {
-           markField(selectedBtn); 
+           markField(selectedBtn);
+           
+           highlightActiveField();
+           
+           markMacroField();
+           
         }
         
         
@@ -238,6 +271,39 @@ public class GameWindowController implements Initializable
         }        
     }
 
+    private void markMacroField() 
+    {
+        //tjek macro field for player wins og markere playerwin i feltet
+    }
+
+    private void highlightActiveField() 
+    {
+        
+        for (GridPane gridPane : gridList) 
+        {
+            String gridLocation = gridPane.getId().toString();
+            gridLocation = gridLocation.replaceAll("B", "");
+            String[] xy = gridLocation.split("_");
+        
+            int x = Integer.parseInt(xy[0]);
+            int y = Integer.parseInt(xy[1]);
+            
+            if(model.getActiveField(x, y))
+            {
+                gridPane.setStyle("-fx-background-color: Yellow;");
+            }
+            else
+            {
+                gridPane.setStyle(null);
+            }
+            
+            
+        }
+        
+        
+    }
+
+    
 
     
 }

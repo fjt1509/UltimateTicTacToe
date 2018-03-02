@@ -32,5 +32,13 @@ public class GameModel {
         return gameManager.retrieveCurrentPlayer();
     }
 
+ 
+
+    public boolean getActiveField(int x, int y) 
+    {
+        return gameManager.getActiveField(x, y);
+    }
+
+
     
 }

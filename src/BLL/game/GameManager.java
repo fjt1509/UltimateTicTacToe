@@ -15,6 +15,9 @@ import BLL.move.IMove;
  * @author mjl
  */
 public class GameManager {
+
+
+
     /**
      * Three different game modes.
      */
@@ -89,7 +92,11 @@ public class GameManager {
         UpdateMacroboard(move);
         PrintDebugMacroBoard(currentState.getField().getMacroboard());
         
-        checkWinner(move);
+        if(checkWinner(move))
+        {
+            assignMacroBoard(move);
+        }
+        
         //Update currentPlayer
         currentPlayer = (currentPlayer + 1) % 2;
         return true;
@@ -141,22 +148,27 @@ public class GameManager {
     }
     
     private void UpdateMacroboard(IMove move)
-    {     
+    { 
+        String player = currentPlayer+"";
+        String otherPlayer = (currentPlayer + 1) % 2 +"";
+        
         for (int x = 0; x < 3; x++) 
         {
             for (int y = 0; y < 3; y++) 
             {
-                if(x == move.getX()%3 && y == move.getY()%3)
+                if(!currentState.getField().getMacroboard()[x][y].equals(player) && !currentState.getField().getMacroboard()[x][y].equals(otherPlayer))
                 {
-                    currentState.getField().getMacroboard()[x][y] = IField.AVAILABLE_FIELD;
+                    if(x == move.getX()%3 && y == move.getY()%3)
+                    {
+                        currentState.getField().getMacroboard()[x][y] = IField.AVAILABLE_FIELD;
                     
-                }
-                else
-                {
-                    currentState.getField().getMacroboard()[x][y] = IField.EMPTY_FIELD;
+                    }
+                    else
+                    {
+                        currentState.getField().getMacroboard()[x][y] = IField.EMPTY_FIELD;
                     
-                }
-                
+                    }                                      
+                }                
             }
             
         }
@@ -195,79 +207,81 @@ public class GameManager {
         }          
     }
     
-    private void checkWinner(IMove move) 
+    private boolean checkWinner(IMove move) 
     {        
         int macroX = move.getX()/3;
         int macroY = move.getY()/3;
         
-        breakpoint:
+        
         for (int x = 0; x < 9; x++) 
         {
             for (int y = 0; y < 9; y++) 
             {        
                 if(x/3 == macroX && y/3 == macroY)
                 {
-                    //ideen er at den finder det øverste felt i venstre hjørne hvor der så bagefter tages udgangspunkt i at tjekke x++ y++ 3 gange for en vinder
                     System.out.println(x + " " + y);  
-                    checkWinner(x, y);
-                    break breakpoint;
+                    
+                    return checkWinner(x, y);
+                    
                 }            
             }
         }
-        
+      return false;
     
     
     }    
     
-        private void checkWinner(int x, int y) 
+        private boolean checkWinner(int x, int y) 
         {
             String player = currentPlayer+"";
-            
             //Horizontal check
             for (int i = 0; i < 3; i++) 
             {
-                int localX = x;
-                int localY = y;
-                if(currentState.getField().getBoard()[localX][localY].equals(player) &&
-                   currentState.getField().getBoard()[localX+1][localY].equals(player) &&
-                   currentState.getField().getBoard()[localX+2][localY].equals(player))
+                
+                if(currentState.getField().getBoard()[x][y+i].equals(player) &&
+                   currentState.getField().getBoard()[x+1][y+i].equals(player) &&
+                   currentState.getField().getBoard()[x+2][y+i].equals(player))
                 {
                     System.out.println(currentPlayer + " has won the board");
+                    return true;
+                    
                 }
-                localY++;
             }
-            
+        
             //Vertical check
             for (int i = 0; i < 3; i++) 
             {
-                int localX = x;
-                int localY = y;                
-                if(currentState.getField().getBoard()[localX][localY].equals(player) &&
-                   currentState.getField().getBoard()[localX][localY+1].equals(player) &&
-                   currentState.getField().getBoard()[localX][localY+2].equals(player))
+                              
+                if(currentState.getField().getBoard()[x+i][y].equals(player) &&
+                   currentState.getField().getBoard()[x+i][y+1].equals(player) &&
+                   currentState.getField().getBoard()[x+i][y+2].equals(player))
                 {
-                    System.out.println(currentPlayer + " has won the board");                
+                    System.out.println(currentPlayer + " has won the board");  
+                    return true;
+                    
                 }
-                localX++;
             } 
             
             //Diagonal check
-            int localX_1 = x;
-            int localY_1 = y;     
-            if(currentState.getField().getBoard()[localX_1][localY_1] == currentPlayer + "" &&
-               currentState.getField().getBoard()[localX_1+1][localY_1+1] == currentPlayer + "" &&
-               currentState.getField().getBoard()[localX_1+2][localY_1+2] == currentPlayer + "")
+            int localX = x;
+            int localY = y;     
+            if(currentState.getField().getBoard()[localX][localY].equals(player) &&
+               currentState.getField().getBoard()[localX+1][localY+1].equals(player)&&
+               currentState.getField().getBoard()[localX+2][localY+2].equals(player))
             {
-                System.out.println(currentPlayer + " has won the board");                
+                System.out.println(currentPlayer + " has won the board");     
+                return true;
             }
-            int localX_2 = x;
-            int localY_2 = y;              
-            if(currentState.getField().getBoard()[localX_2+2][localY_2] == currentPlayer + "" &&
-               currentState.getField().getBoard()[localX_2+1][localY_2+1] == currentPlayer + "" &&
-               currentState.getField().getBoard()[localX_2][localY_2+2] == currentPlayer + "")
+            localX = x;
+            localY = y;              
+            if(currentState.getField().getBoard()[localX+2][localY].equals(player)&&
+               currentState.getField().getBoard()[localX+1][localY+1].equals(player)&&
+               currentState.getField().getBoard()[localX][localY+2].equals(player))
             {
-                System.out.println(currentPlayer + " has won the board");                
-            }            
+                System.out.println(currentPlayer + " has won the board");       
+                return true;
+            }   
+            return false;
         }
         
         
@@ -276,6 +290,21 @@ public class GameManager {
         return currentPlayer;
     }       
      
+    
+    private void assignMacroBoard(IMove move) 
+    {
+        currentState.getField().getMacroboard()[move.getX()/3][move.getY()/3] = currentPlayer+"";
+    }
+        
+    
+    public boolean getActiveField(int x, int y) 
+    {
+        if(currentState.getField().getMacroboard()[x][y].equals(IField.AVAILABLE_FIELD))
+        {
+            return true;
+        }
+        return false;
+    }
 }
 
 
